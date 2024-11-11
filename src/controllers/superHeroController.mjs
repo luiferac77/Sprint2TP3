@@ -34,8 +34,8 @@ export const buscarHeroesPorAtributoController = async (req, res) => {
     //si quiero usar req.query la ruta de postman será por ejemplo 
     //http://localhost:3000/api/heroes/buscar?atributo=nombreReal&valor=Peter%20Parker
 
-    //const {atributo, valor} = req.params; esto es para params
-    const {atributo, valor} = req.query; //esto es para query params
+    const {atributo, valor} = req.params; //esto es para params
+    //const {atributo, valor} = req.query; //esto es para query params
     const superheroes = await buscarHeroesPorAtributo(atributo, valor);
 
     if(superheroes.length > 0) {
