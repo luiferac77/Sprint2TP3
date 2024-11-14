@@ -2,7 +2,7 @@ import {
             obtenerSuperHeroePorId, 
             obtenerTodosLosSuperHeroes, 
             buscarHeroesPorAtributo, 
-            obtenerSuperHeroesMayoresDe38 
+            obtenerSuperHeroesMayoresDe30
         } from "../services/superHeroService.mjs";
 
 import { renderizarSuperHeroe, renderizarListaSuperHeroes } from "../views/responseView.mjs";
@@ -45,8 +45,8 @@ export const buscarHeroesPorAtributoController = async (req, res) => {
     }
 }
 
-export const obtenerMayoresDe38Controller = async (req, res) => {
-    const superheroes = await obtenerSuperHeroesMayoresDe38();
+export const obtenerMayoresDe30Controller = async (req, res) => {
+    const superheroes = await obtenerSuperHeroesMayoresDe30();
     if(superheroes){
         res.send(renderizarListaSuperHeroes(superheroes));
     } else {

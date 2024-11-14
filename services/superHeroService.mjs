@@ -12,6 +12,6 @@ export const buscarHeroesPorAtributo = async (atributo, valor) => {
     return await SuperHeroRepository.buscarPorAtributo(atributo, valor);
 }
 
-export const obtenerSuperHeroesMayoresDe38 = async () => {
-    return await SuperHeroRepository.obtenerMayoresDe38();
+export const obtenerSuperHeroesMayoresDe30 = async () => {
+    return await SuperHeroRepository.obtenerMayoresDe30();
 }
